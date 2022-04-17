@@ -1,6 +1,7 @@
 # JavaStore
   
 Demo : https://youtu.be/XkrmOmPCXn8  
+  
 Java與Mysql製作的模擬購物商城網站，實現項目為註冊、登入、撈資料庫的商品列表、商品列表分頁、購物車以及購物等功能。  
 編輯器使用IntelliJ IDEA。  
 靜態頁面使用JSP技術。  
