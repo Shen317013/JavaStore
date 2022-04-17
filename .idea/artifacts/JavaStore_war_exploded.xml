@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="JavaStore:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaStore_war_exploded</output-path>
+    <root id="archive" name="JavaStore_war exploded.war">
+      <element id="javaee-facet-resources" facet="JavaStore/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="JavaStore" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="jstl" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
