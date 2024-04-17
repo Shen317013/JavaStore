@@ -15,7 +15,6 @@ public class JdbcTemplate {
             preparedStatement = pscreator.createPreparedStatement(connection);
             resultSet = preparedStatement.executeQuery();
 
-            //遍历结果集
             while (resultSet.next()) {
                 callbackHandler.processRow(resultSet);
             }
@@ -29,7 +28,7 @@ public class JdbcTemplate {
                 try {
                     connection.close();
                 } catch (SQLException e) {
-                    throw new DataAccessException("JdbcTemplate中不能关闭数据库连接", e);
+                    throw new DataAccessException("JdbcTemplate中不能關閉數據庫連接", e);
                 }
             }
 
@@ -37,7 +36,7 @@ public class JdbcTemplate {
                 try {
                     preparedStatement.close();
                 } catch (SQLException e) {
-                    throw new DataAccessException("JdbcTemplate中不能释放语句对象", e);
+                    throw new DataAccessException("JdbcTemplate中不能釋放語句對象", e);
                 }
             }
 
@@ -45,7 +44,7 @@ public class JdbcTemplate {
                 try {
                     resultSet.close();
                 } catch (SQLException e) {
-                    throw new DataAccessException("JdbcTemplate中不能关闭结果集对象", e);
+                    throw new DataAccessException("JdbcTemplate中不能關閉結果集對象", e);
                 }
             }
         }
@@ -71,7 +70,7 @@ public class JdbcTemplate {
                 try {
                     connection.close();
                 } catch (SQLException e) {
-                    throw new DataAccessException("JdbcTemplate中不能关闭数据库连接", e);
+                    throw new DataAccessException("JdbcTemplate中不能關閉數據庫連接", e);
                 }
             }
 
@@ -79,7 +78,7 @@ public class JdbcTemplate {
                 try {
                     preparedStatement.close();
                 } catch (SQLException e) {
-                    throw new DataAccessException("JdbcTemplate中不能释放语句对象", e);
+                    throw new DataAccessException("JdbcTemplate中不能釋放語句對象", e);
                 }
             }
         }
