@@ -12,11 +12,9 @@ public class DBHelp {
     static Properties info = new Properties();
 
     static {
-        // 获得属性文件输入流
         InputStream in = DBHelp.class.getClassLoader().getResourceAsStream("config.properties");
 
         try {
-            // 从属性文件读取到变量info
             info.load(in);
         } catch (IOException e) {
             e.printStackTrace();
